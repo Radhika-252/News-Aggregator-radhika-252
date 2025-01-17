@@ -1,0 +1,93 @@
+/* Color Palette */
+
+:root {
+    --deep-champagne: #F3CEA1;
+    --dutch-white: #F3DFC1;
+    --eerie-black: #1A1C1A;
+}
+
+/* Hamburger Menu Icon */
+
+.M {
+    cursor: grab;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.M-BTN-TOG-1 {
+    background-color: var(--eerie-black);
+    height: 5px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+    width: 40px;
+}
+
+.M-BTN-TOG-2 {
+    background-color: var(--eerie-black);
+    height: 5px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+    width: 40px;
+}
+
+.M-BTN-TOG-3 {
+    background-color: var(--eerie-black);
+    height: 5px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+    width: 40px;
+}
+
+.M:hover {
+    opacity: 0.5;
+}
+
+/* Toggled Category Section */
+
+.S {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    z-index: 2000;
+    height: calc(100vh - 65px);
+    background-color: var(--eerie-black);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/*
+.S:hover {
+    overflow: hidden;
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory;
+}*/
+
+.S-L {
+    padding-top: 20px;
+    overflow:hidden;
+    visibility: hidden;
+}
+
+.S-L-I {
+    list-style: none;
+}
+
+.S-L-I-A, .S-L-I-S{
+    display: block;
+    height: 40px;
+    padding-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E2E3E2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.S-L-I-A:hover {
+    cursor: pointer;
+    color: var(--deep-champagne);
+}
